@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Contact Scanner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/html5-qrcode" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>QR Contact Scanner</h1>
+
+    <div id="reader" class="qr-box"></div>
+
+    <div id="result" class="result-box">
+      <h2>Contact Details</h2>
+      <p><strong>Name:</strong> <span id="name">—</span></p>
+      <p><strong>Phone:</strong> <span id="phone">—</span></p>
+      <p><strong>Email:</strong> <span id="email">—</span></p>
+      <button id="saveBtn" disabled>Save Contact</button>
+    </div>
+  </div>
+</body>
+</html>
